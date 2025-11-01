@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
-Route::get('/dilla', function () {
-    return view('halo');
+Route::get('/', function () {
+    return view(view: 'landingPage');
 });
-Route::get('/hi', function(){
-    return view('andif/tes');
-});
+
+Route::get('/admin/kelolaPengguna', [AdminController::class, 'index'])->name('admin.kelolaPengguna');
