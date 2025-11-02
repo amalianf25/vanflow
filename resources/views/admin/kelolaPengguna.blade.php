@@ -8,18 +8,26 @@
     $fieldCount = collect($users)->where('peran', 'Pekerja Lapangan')->count();
 @endphp
 
-{{-- Header --}}
-<header class="flex items-center justify-between mb-6">
+<header class="flex items-center justify-between bg-white px-8 py-5
+               fixed top-0 left-60 right-0 z-40 border-b border-gray-200 shadow-sm">
+
     <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 tracking-wide">
         KELOLA PENGGUNA
     </h2>
 
     <div class="flex items-center gap-2">
         <span class="text-gray-700 text-sm font-medium">Admin</span>
-        <span class="material-symbols-outlined text-[#0057B1] text-2xl">person</span>
+
+        {{-- Tombol Profil --}}
+        <a href=""
+           class="flex items-center justify-center p-1.5 rounded-full hover:bg-blue-50 transition duration-150"
+           title="Lihat Profil">
+            <span class="material-symbols-outlined text-[#0057B1] text-2xl">person</span>
+        </a>
     </div>
 </header>
 
+<div class="mt-20"></div> {{-- Spacer untuk header tetap --}}
     {{-- Toolbar (Tambah + Cari) --}}
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
     {{-- Tombol Tambah --}}
