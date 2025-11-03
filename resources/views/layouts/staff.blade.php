@@ -17,7 +17,7 @@
     </style>
 </head>
 <body class="bg-gray-100 flex h-screen overflow-hidden">
-    @include('navbar.sidebar')
+    @include('navbar.NavStaff')
 
     <main class="ml-60 flex-1 bg-gray-100 min-h-screen overflow-y-auto">
         <div class="p-6 sm:p-8"> 
