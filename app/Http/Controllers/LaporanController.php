@@ -12,25 +12,25 @@ class LaporanController extends Controller
         $laporan = [
             [
                 'nama_pembeli' => 'PT Tambak Jaya',
-                'jumlah_pembelian' => '500 ekor',
+                'jumlah_pembelian' => '500',
                 'keterangan' => 'Petambak',
                 'status' => 'Selesai',
             ],
             [
                 'nama_pembeli' => 'CV Laut Biru',
-                'jumlah_pembelian' => '250 ekor',
+                'jumlah_pembelian' => '250',
                 'keterangan' => 'Distributor',
                 'status' => 'Proses',
             ],
             [
                 'nama_pembeli' => 'Pak Jono',
-                'jumlah_pembelian' => '150 ekor',
+                'jumlah_pembelian' => '150',
                 'keterangan' => 'Penggelondong',
                 'status' => 'Selesai',
             ],
             [
                 'nama_pembeli' => 'PT AquaFarm',
-                'jumlah_pembelian' => '800 ekor',
+                'jumlah_pembelian' => '800',
                 'keterangan' => 'Petambak',
                 'status' => 'Selesai',
             ],
