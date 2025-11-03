@@ -18,10 +18,10 @@
                 <span class="material-symbols-outlined">Home</span>
                 <span>Dashboard</span>
             </a>
-            <a href=""
+            <a href="{{ route('staff.dataPembelian') }}"
                class="flex items-center gap-3 px-6 py-3 hover:bg-gray-100 transition
-                      {{ request()->routeIs('') ? 'font-semibold text-blue-600' : '' }}">
-                <span class="material-symbols-outlined">bar_chart_4_bars</span>
+                      {{ request()->routeIs('staff.dataPembelian') ? 'font-semibold text-blue-600' : '' }}">
+                <span class="material-symbols-outlined">query_stats</span>
                 <span>Data Pembelian</span>
             </a>
             <a href=""
@@ -33,7 +33,7 @@
             <a href=""
                class="flex items-center gap-3 px-6 py-3 hover:bg-gray-100 transition
                       {{ request()->routeIs('') ? 'font-semibold text-blue-600' : '' }}">
-                <span class="material-symbols-outlined">bar_chart_4_bars</span>
+                <span class="material-symbols-outlined">leaderboard</span>
                 <span>Rekap Mingguan</span>
             </a>
         </nav>
