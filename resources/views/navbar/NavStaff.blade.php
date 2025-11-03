@@ -24,9 +24,9 @@
                 <span class="material-symbols-outlined">query_stats</span>
                 <span>Data Pembelian</span>
             </a>
-            <a href=""
+            <a href="{{ route('staff.laporanbulanan') }}"
                class="flex items-center gap-3 px-6 py-3 hover:bg-gray-100 transition
-                      {{ request()->routeIs('') ? 'font-semibold text-blue-600' : '' }}">
+                      {{ request()->routeIs('staff.laporanbulanan') ? 'font-semibold text-blue-600' : '' }}">
                 <span class="material-symbols-outlined">bar_chart_4_bars</span>
                 <span>Laporan Bulanan</span>
             </a>
