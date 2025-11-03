@@ -87,7 +87,7 @@
                     {{-- Right: Jumlah --}}
                     <div class="text-right">
                         <span class="text-green-600 font-semibold text-sm">
-                            Rp {{ number_format($trx['jumlah'], 0, ',', '.') }}
+                            {{ number_format($trx['jumlah'], 0, ',', '.') }}
                         </span>
                     </div>
                 </div>

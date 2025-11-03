@@ -123,7 +123,7 @@
                             <td class="px-6 py-3">{{ $item['tujuan'] }}</td>
                             <td class="px-6 py-3 text-gray-500 italic">{{ $item['keterangan'] }}</td>
                             <td class="px-6 py-3">{{ $item['tanggal'] }}</td>
-                            <td class="px-6 py-3 text-green-600 font-semibold">Rp {{ number_format($item['jumlah'], 0, ',', '.') }}</td>
+                            <td class="px-6 py-3 text-green-600 font-semibold">{{ number_format($item['jumlah'], 0, ',', '.') }}</td>
                             <td class="px-6 py-3 text-center flex justify-center gap-2">
                                 <button onclick="openEditModal(this)"
                                     class="text-yellow-500 hover:text-yellow-600 transition transform hover:scale-110"

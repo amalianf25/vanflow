@@ -107,7 +107,6 @@
                 </tr>
             @endforeach
 
-            {{-- Baris kosong untuk padding visual --}}
             @for ($i = 0; $i < 4; $i++)
                 <tr>
                     <td class="px-4 py-5 border border-gray-200">&nbsp;</td>
