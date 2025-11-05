@@ -8,7 +8,7 @@
     {{-- Header --}}
     <div class="flex items-center justify-between border-b pb-3 mb-6">
         <div class="flex items-center gap-3">
-            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-10">
+            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="w-10">
             <h2 class="text-xl font-semibold text-[#0057B1]">Profil Pengguna</h2>
         </div>
         <img src="https://i.pravatar.cc/50?img=5" class="w-10 h-10 rounded-full object-cover">

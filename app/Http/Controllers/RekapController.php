@@ -27,6 +27,6 @@ class RekapController extends Controller
         ];
 
         // kirim data ke view
-        return view('rekap-mingguan', compact('data'));
+        return view('pekerja.rekap-mingguan', compact('data'));
     }
 }

@@ -17,6 +17,6 @@ class ProfileController extends Controller
             'telepon' => '0812-3456-7890',
         ];
 
-        return view('profil', compact('user'));
+        return view('staff.profil', compact('user'));
     }
 }

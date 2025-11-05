@@ -21,5 +21,6 @@ Route::get('/staff/data-pembelian', [DataPembelianController::class, 'index'])->
 
 Route::get('/staff/laporanbulanan', [LaporanController::class, 'index'])->name('staff.laporanbulanan');
 Route::get('/staff/rekapmingguan', [RekapMingguanController::class, 'rekapMingguan'])->name('staff.rekapmingguan');
-Route::get('/profil', [ProfileController::class, 'show'])->name('profil');
-Route::get('/rekap-mingguan', [RekapController::class, 'index'])->name('rekap.mingguan');
+Route::get('/staff/profil', [ProfileController::class, 'show'])->name('staff.profil');
+
+Route::get('/pekerja/rekap-mingguan', [RekapController::class, 'index'])->name('pekerja.rekap.mingguan');

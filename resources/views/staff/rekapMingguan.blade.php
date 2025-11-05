@@ -19,17 +19,20 @@
 </style>
 
 <header class="flex items-center justify-between bg-white px-8 py-5
-                fixed top-0 left-60 right-0 z-40 border-b border-gray-200 shadow-sm">
-    <h2 class="text-xl sm:text-2xl font-semibold text-[#243D7A] tracking-wide">
-        REKAP MINGGUAN
+               fixed top-0 left-60 right-0 z-40 border-b border-gray-200 shadow-sm">
+    <h2 class="text-xl sm:text-2xl font-bold text-black tracking-wide uppercase">
+        Rekap Mingguan
     </h2>
+    @php
+        $nama = 'Andi';
+    @endphp
 
-    <div class="flex items-center gap-2">
-        <span class="text-gray-700 text-sm font-medium">Nama</span>
-        <a href=""
-           class="flex items-center justify-center p-1.5 rounded-full hover:bg-blue-50 transition duration-150"
+    <div class="flex items-center gap-3">
+        <span class="text-gray-700 text-sm font-medium">{{ $nama ?? 'Nama Tidak Diketahui' }}</span>
+        <a href="{{ route('staff.profil') }}"
+           class="flex items-center justify-center w-10 h-10 bg-[#EAF2FB] rounded-full hover:bg-[#d8e7fb] transition duration-150"
            title="Lihat Profil">
-            <span class="material-symbols-outlined text-[#0057B1] text-2xl">person</span>
+            <span class="material-symbols-outlined text-[#0057B1] text-[26px]">person</span>
         </a>
     </div>
 </header>
