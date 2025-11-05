@@ -9,11 +9,14 @@
     <h2 class="text-xl sm:text-2xl font-bold text-black tracking-wide uppercase">
         Dashboard
     </h2>
+    @php
+        $nama = 'Andi';
+    @endphp
 
     <div class="flex items-center gap-3">
-        <span class="text-gray-700 text-sm font-medium">Nama Staff</span>
+        <span class="text-gray-700 text-sm font-medium">{{ $nama ?? 'Nama Tidak Diketahui' }}</span>
 
-        <a href="#"
+        <a href="{{ route('staff.profil') }}"
            class="flex items-center justify-center w-10 h-10 bg-[#EAF2FB] rounded-full hover:bg-[#d8e7fb] transition duration-150"
            title="Lihat Profil">
             <span class="material-symbols-outlined text-[#0057B1] text-[26px]">person</span>

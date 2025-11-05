@@ -30,9 +30,9 @@
                 <span class="material-symbols-outlined">bar_chart_4_bars</span>
                 <span>Laporan Bulanan</span>
             </a>
-            <a href=""
+            <a href="{{ route('staff.rekapmingguan') }}"
                class="flex items-center gap-3 px-6 py-3 hover:bg-gray-100 transition
-                      {{ request()->routeIs('') ? 'font-semibold text-blue-600' : '' }}">
+                      {{ request()->routeIs('staff.rekapmingguan') ? 'font-semibold text-blue-600' : '' }}">
                 <span class="material-symbols-outlined">leaderboard</span>
                 <span>Rekap Mingguan</span>
             </a>
