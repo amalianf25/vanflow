@@ -6,6 +6,8 @@ use App\Http\Controllers\DashboardStaffController;
 use App\Http\Controllers\DataPembelianController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\RekapMingguanController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RekapController;
 
 
 Route::get('/', function () {
@@ -19,3 +21,5 @@ Route::get('/staff/data-pembelian', [DataPembelianController::class, 'index'])->
 
 Route::get('/staff/laporanbulanan', [LaporanController::class, 'index'])->name('staff.laporanbulanan');
 Route::get('/staff/rekapmingguan', [RekapMingguanController::class, 'rekapMingguan'])->name('staff.rekapmingguan');
+Route::get('/profil', [ProfileController::class, 'show'])->name('profil');
+Route::get('/rekap-mingguan', [RekapController::class, 'index'])->name('rekap.mingguan');
