@@ -22,7 +22,6 @@
 </header>
 <div class="pt-24 px-8 bg-[#F5F7FB] min-h-screen">
 
-    {{-- Filter Bulan dan Tahun --}}
     <div class="bg-white p-6 rounded-xl shadow-sm">
         <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
             <div class="flex flex-col sm:flex-row gap-6 items-center">
