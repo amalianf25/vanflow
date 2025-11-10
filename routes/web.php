@@ -13,6 +13,8 @@ use App\Http\Controllers\ProfilPekerjaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\lupaPasswordController;
 use App\Http\Controllers\ResetPasswordController;
+use App\Http\Controllers\StaffPasswordController;
+use App\Http\Controllers\PekerjaPasswordController;
 
 
 Route::get('/', function () {
@@ -23,15 +25,22 @@ Route::get('/admin/kelolaPengguna', [AdminController::class, 'index'])->name('ad
 
 Route::get('/staff/dashboard', [DashboardStaffController::class, 'index'])->name('staff.dashboard');
 Route::get('/staff/data-pembelian', [DataPembelianController::class, 'index'])->name('staff.dataPembelian');
-
 Route::get('/staff/laporanbulanan', [LaporanController::class, 'index'])->name('staff.laporanbulanan');
 Route::get('/staff/rekapmingguan', [RekapMingguanController::class, 'rekapMingguan'])->name('staff.rekapmingguan');
 Route::get('/staff/profil', [ProfileController::class, 'show'])->name('staff.profil');
 Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+Route::prefix('staff')->group(function () {
+    Route::get('/ubah-password', [StaffPasswordController::class, 'edit'])->name('staff.password.edit');
+    Route::post('/ubah-password', [StaffPasswordController::class, 'update'])->name('staff.updatePassword');
+});
 
 Route::get('/pekerja/rekap-mingguan', [RekapController::class, 'index'])->name('pekerja.rekap.mingguan');
 Route::get('/pekerja/profil', [ProfilPekerjaController::class, 'show'])->name('pekerja.profil');
 Route::post('/pekerja/profil/update', [ProfilPekerjaController::class, 'update'])->name('profil.update');
+Route::prefix('pekerja')->group(function () {
+    Route::get('/ubah-password', [PekerjaPasswordController::class, 'edit'])->name('pekerja.password.edit');
+    Route::post('/ubah-password', [PekerjaPasswordController::class, 'update'])->name('pekerja.updatePassword');
+});
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
